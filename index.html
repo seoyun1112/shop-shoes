@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171316">
+  <meta name="description" content="shoes-shop — 러너를 위한 러닝화 전문 쇼핑몰">
+  <title>shoes-shop | RUN YOUR WAY</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">신규 회원 3,000P 지급 <span aria-hidden="true">·</span> 등급별 최대 7% 적립</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" data-view="home" aria-label="shoes-shop 홈">↗ <span>shoes-shop<small>RUNNING ESSENTIALS</small></span></a>
+      <form id="header-search" class="header-search" role="search"><label class="sr-only" for="search-input">상품 검색</label><input id="search-input" placeholder="어떤 러닝화를 찾으세요?" autocomplete="off"><button type="submit" aria-label="검색">⌕</button></form>
+      <div class="header-actions"><button type="button" data-view="login" id="account-btn">로그인</button><button type="button" data-view="mypage">마이페이지</button><button type="button" data-view="cart">장바구니 <b class="count" id="cart-count">0</b></button></div>
+    </div>
+  </header>
+  <nav class="main-nav" aria-label="상품 분류"><div class="container nav-inner"><button type="button" data-view="home">홈</button><button type="button" data-category="all">전체 상품</button><button type="button" data-category="로드 러닝화">로드 러닝화</button><button type="button" data-category="트레일 러닝화">트레일 러닝화</button><button type="button" data-category="레이싱화">레이싱화</button><button type="button" data-category="데일리 러닝화">데일리 러닝화</button></div></nav>
+  <main id="main-content">
+    <section id="home-view" class="view" aria-labelledby="home-title">
+      <h1 id="home-title" class="sr-only">러너를 위한 shoes-shop</h1>
+      <section class="hero" aria-label="추천 러닝화 슬라이드">
+        <div class="hero-slide active" style="background-image:linear-gradient(90deg,rgba(12,9,12,.94),rgba(12,9,12,.15)),url('./img/slide1.jpg')"><div class="container hero-content"><p class="eyebrow">RUN YOUR WAY / 01</p><h2>더 멀리,<br>더 가볍게.</h2><p>당신의 다음 기록을 위한 러닝화</p><button type="button" class="btn primary" data-category="로드 러닝화">로드 러닝화 보기 <span aria-hidden="true">↗</span></button></div></div>
+        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(12,9,12,.93),rgba(12,9,12,.1)),url('./img/slide2.jpg')"><div class="container hero-content"><p class="eyebrow">FIND YOUR TRAIL / 02</p><h2>길이 끝나는 곳,<br>달리기가 시작된다.</h2><p>어떤 지형에서도 흔들림 없이</p><button type="button" class="btn primary" data-category="트레일 러닝화">트레일 러닝화 보기 ↗</button></div></div>
+        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(12,9,12,.94),rgba(12,9,12,.1)),url('./img/slide3.jpg')"><div class="container hero-content"><p class="eyebrow">CHASE YOUR BEST / 03</p><h2>기록은<br>스스로 넘어선다.</h2><p>속도를 위한 단 하나의 선택</p><button type="button" class="btn primary" data-category="레이싱화">레이싱화 보기 ↗</button></div></div>
+        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(12,9,12,.94),rgba(12,9,12,.1)),url('./img/slide4.jpg')"><div class="container hero-content"><p class="eyebrow">EVERYDAY MOVEMENT / 04</p><h2>매일의 한 걸음이<br>새로운 시작.</h2><p>꾸준한 러닝을 위한 편안함</p><button type="button" class="btn primary" data-category="데일리 러닝화">데일리 러닝화 보기 ↗</button></div></div>
+        <button type="button" class="hero-arrow prev" id="slide-prev" aria-label="이전 슬라이드">‹</button><button type="button" class="hero-arrow next" id="slide-next" aria-label="다음 슬라이드">›</button><div class="hero-dots" id="hero-dots" aria-label="슬라이드 선택"></div>
+      </section>
+      <section class="benefits"><div class="container benefit-grid"><div>◈ <span><strong>신규 가입 혜택</strong><small>가입 즉시 3,000P</small></span></div><div>◎ <span><strong>멤버십 포인트</strong><small>구매 금액의 1~7%</small></span></div><div>↗ <span><strong>러너를 위한 선택</strong><small>4개 카테고리 · 8종</small></span></div></div></section>
+      <section class="container section"><div class="section-head"><div><p class="eyebrow wine">FIND YOUR PACE</p><h2>나에게 맞는 러닝화</h2></div></div><div class="category-grid"><button type="button" class="category-card" data-category="로드 러닝화"><img src="./img/shoe1.jpg" alt="로드 러닝화"><span>ROAD RUNNING <b>로드 러닝화 ↗</b></span></button><button type="button" class="category-card" data-category="트레일 러닝화"><img src="./img/shoe7.jpg" alt="트레일 러닝화"><span>TRAIL RUNNING <b>트레일 러닝화 ↗</b></span></button><button type="button" class="category-card" data-category="레이싱화"><img src="./img/shoe5.jpg" alt="레이싱화"><span>RACE DAY <b>레이싱화 ↗</b></span></button><button type="button" class="category-card" data-category="데일리 러닝화"><img src="./img/shoe3.jpg" alt="데일리 러닝화"><span>DAILY RUN <b>데일리 러닝화 ↗</b></span></button></div></section>
+      <section class="container section"><div class="section-head"><div><p class="eyebrow wine">CURATED FOR RUNNERS</p><h2>추천 러닝화</h2></div><button type="button" class="link-button" data-category="all">전체 상품 보기 →</button></div><div id="featured-grid" class="product-grid"></div></section>
+      <section class="container membership-banner"><div><p class="eyebrow">SHOES-SHOP MEMBERSHIP</p><h2>달릴수록 커지는 혜택</h2><p>가입 3,000P · 구매 적립 최대 7%</p></div><div class="tier-strip" id="tier-strip"></div></section>
+    </section>
+    <section id="catalog-view" class="view hidden container section" aria-labelledby="catalog-title"><div class="section-head"><div><p class="eyebrow wine">SHOP ALL</p><h1 id="catalog-title">러닝화 쇼핑</h1></div><p id="result-count" class="muted"></p></div><div class="shop-tools"><label>분류 <select id="category-select"><option value="all">전체 상품</option><option>로드 러닝화</option><option>트레일 러닝화</option><option>레이싱화</option><option>데일리 러닝화</option></select></label><label>정렬 <select id="sort-select"><option value="default">추천순</option><option value="low">낮은 가격순</option><option value="high">높은 가격순</option><option value="name">이름순</option></select></label><label class="catalog-search">검색 <input type="search" id="catalog-query" placeholder="상품명 검색"></label></div><div id="catalog-grid" class="product-grid"></div></section>
+    <section id="detail-view" class="view hidden container section" aria-labelledby="detail-title"><button class="text-back" type="button" data-category="all">← 상품 목록</button><div id="detail-content"></div></section>
+    <section id="cart-view" class="view hidden container section" aria-labelledby="cart-title"><p class="eyebrow wine">YOUR BAG</p><h1 id="cart-title">장바구니</h1><div id="cart-content"></div></section>
+    <section id="checkout-view" class="view hidden container section" aria-labelledby="checkout-title"><p class="eyebrow wine">DEMO CHECKOUT</p><h1 id="checkout-title">주문하기 <small class="muted">(체험 결제)</small></h1><div id="checkout-content"></div></section>
+    <section id="login-view" class="view hidden container section narrow" aria-labelledby="login-title"><p class="eyebrow wine">WELCOME BACK</p><h1 id="login-title">로그인</h1><form id="login-form" class="stack-form"><label>이메일<input type="email" name="email" required autocomplete="email"></label><label>비밀번호<input type="password" name="password" required autocomplete="current-password"></label><button class="btn primary full">로그인</button></form><p class="form-help">아직 회원이 아니신가요? <button type="button" class="inline-link" data-view="signup">회원가입</button></p></section>
+    <section id="signup-view" class="view hidden container section narrow" aria-labelledby="signup-title"><p class="eyebrow wine">JOIN THE RUN</p><h1 id="signup-title">회원가입</h1><p class="muted">가입 완료 시 3,000P를 드립니다.</p><form id="signup-form" class="stack-form"><label>이름<input name="name" required minlength="2" maxlength="30" autocomplete="name"></label><label>이메일<input type="email" name="email" required autocomplete="email"></label><label>비밀번호 (8자 이상)<input type="password" name="password" required minlength="8" autocomplete="new-password"></label><label>비밀번호 확인<input type="password" name="confirm" required minlength="8" autocomplete="new-password"></label><button class="btn primary full">가입하고 3,000P 받기</button></form><p class="form-help">이미 회원이신가요? <button type="button" class="inline-link" data-view="login">로그인</button></p></section>
+    <section id="mypage-view" class="view hidden container section" aria-labelledby="mypage-title"><p class="eyebrow wine">MY RUNNING CLUB</p><h1 id="mypage-title">마이페이지</h1><div id="mypage-content"></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong class="footer-logo">↗ shoes-shop</strong><p>러너의 매일을 위한 신발</p></div><div><p>경영데이터베이스및실습 수업 프로젝트</p><p>본 사이트는 학습용이며 실제 결제가 진행되지 않습니다.</p></div></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
